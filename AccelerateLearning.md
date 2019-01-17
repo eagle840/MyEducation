@@ -8,3 +8,7 @@
 3. Read all bold print (in a chatper)
 4. Read 1st and last in a paragraph
 * read chapter
+
+### Negitives
+Dunning–Kruger effect
+Recency Bias

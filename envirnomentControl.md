@@ -11,3 +11,8 @@
 
 ## Course control
 1. running to many courses at once doesn't allow for concentration and for completion.
+
+## MOOC
+1. edx 
+2. coursera
+3. IBM   cognitiveclass.ai

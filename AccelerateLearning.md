@@ -12,3 +12,10 @@
 ### Negitives
 Dunning–Kruger effect
 Recency Bias
+
+## Note Taking
+
+Note that I've tried othere college solutions - seems to take to much paper with no results
+
+Run throuh class taking notes in BLUE
+Run through again, using RED/GREEN to clearly mark out sections, order notes, enter things into flash cards that you didn't remember

@@ -19,3 +19,9 @@ Note that I've tried othere college solutions - seems to take to much paper with
 
 Run throuh class taking notes in BLUE
 Run through again, using RED/GREEN to clearly mark out sections, order notes, enter things into flash cards that you didn't remember
+
+
+## Class/course taking
+if there are many sections in a course, consider takeing all the sub courses over time as opposed to taking one at a time
+This will get you education each day in a subsection, that will help reenforce the education over time
+Also have flash cards ready to fill in

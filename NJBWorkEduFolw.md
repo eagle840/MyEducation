@@ -6,15 +6,17 @@
 ##     a third party need to review this graph
 
 
-Terraform
-Jenkins
-C
-Java
-Python
-Docker @20%  [class](http://training.play-with-docker.com)
-K8S
-Hadoop/Spark
-Datastax 
-Neo4j
-MongoDB
-Redis
+* Terraform
+* Jenkins
+* C
+* Java
+* Python
+* Docker @20%  [class](http://training.play-with-docker.com)
+* K8S
+* Hadoop/Spark
+* Datastax 
+* Neo4j
+* MongoDB
+* Redis
+* AWS data enginner
+* GCP data engineer 

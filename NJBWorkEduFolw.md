@@ -24,3 +24,9 @@
 * AWS data enginner     5% [class](https://www.udemy.com/aws-big-data/learn/lecture/14148391?start=300)
 * AWS security
 * GCP data engineer     50%[class](https://www.udemy.com/gcp-data-engineer-and-cloud-architect)
+
+## Certs - upcoming
+
+ccsk https://en.wikipedia.org/wiki/Cloud_Security_Alliance   vs ccsp?
+ComptTIA security
+Cisco CCNP Security Core

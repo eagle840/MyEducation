@@ -7,6 +7,13 @@ docker run
 
 to dicover port for a container: docker port redisDynamic 6379
 
+## dataContiners (that don't run but hold data for other containers)
+docker create -v /config --name dataContainer busybox    # use a small image for these containrs, like busy box  
+# copy data into it with docker cp <local> <containerName>:/config  
+# then combine them with a running container   docker run --volumes-from dataContainer ubuntu ls /config  
+# you can export and import them     docker export dataContainer > dataContainer.tar       
+#  import into docker:    docker import dataContainer.tar
+
 # DOCKERFILE
 
 FROM image:tag  

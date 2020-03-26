@@ -10,6 +10,7 @@ Meets Type
 Hack Type
 - https://www.hackathon.com/city/united-kingdom/london
 - https://www.eventbrite.com/
+- https://www.reddit.com/r/hackathon/     ('hackathons' has way less content)
 
 
 Terms:

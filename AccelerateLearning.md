@@ -9,6 +9,15 @@
 4. Read 1st and last in a paragraph
 * read chapter
 
+## How to speed read videos (from above section)
+  * I was thinking it was possible to take the information from the above section and apply it to video learning
+  1. Read all the video titles
+  2. skim through the video looking at slides
+  2a. is there a section quiz to take? can I youtube search '<subject> test questions'
+  3. speed watch the videos
+  4. test, noting failures
+  5. regular watch test failure subjects
+
 ### Negitives
 Dunning–Kruger effect
 Recency Bias

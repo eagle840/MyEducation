@@ -17,6 +17,13 @@
   3. speed watch the videos
   4. test, noting failures
   5. regular watch test failure subjects
+ 
+## 'Subject Linking@
+
+* Need a better title for this section
+* Using linked-data to get an over view of a subject
+* find a wikipedia article for the subject, they may be a grid at this bottom that gives an over view
+* you can also jump over to the wikidata site for that subject (Q value)
 
 ### Negitives
 Dunning–Kruger effect

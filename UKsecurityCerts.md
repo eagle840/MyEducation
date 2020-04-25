@@ -25,6 +25,14 @@ Follow up:
 NATIONAL CYBER SECURITY STRATEGY 2016-2021  
 https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/567242/national_cyber_security_strategy_2016.pdf  
 
+Has a good hx section:  <<-- you'll need to read  (there is no date in this book, but ref to 2018)
+https://books.google.co.uk/books?id=5iqQDwAAQBAJ&pg=PA218&lpg=PA218&dq=iisp+Skills+Framework+-+Version+2.3&source=bl&ots=jIMAYfUgrA&sig=ACfU3U0pPCejv1P03sClwwXEybooma5Xww&hl=en&sa=X&ved=2ahUKEwi7gquVsoPpAhUoTxUIHVAsD-QQ6AEwBnoECAoQAQ#v=onepage&q=iisp%20Skills%20Framework%20-%20Version%202.3&f=false  
+
+Hx of Frameworks (wrt UK)
+Looks like IISP framework came out 1st (UK)
+Others inc: ISC2  ISACA
+
+
 
 #### NCSC  
 It appears that NCSC has a Certified Professional scheme called CCP?  
@@ -38,8 +46,9 @@ Certification Bodies (CBs) approved by the NCSC  (allowing work on UK government
 - BCS (the Chartered Institute for IT)
 - CIISec, CREST and RHUL consortium
 
-Looks like the system is broken up unto roles, and you work your way up in skill (IISP?) level in each role (practitioner, senior, lead).  
+Looks like the system is broken up unto roles, and you work your way up in skill  level in each role (practitioner, senior, lead).  
 Each particular level has been assigned a SFIA responsibility level (see below)  
+Looks like it's based on a framework: IISP Skills Framework version 2.3 (sections A-k) see below
 ROLES: 
 	* IA Accreditor, partitioner is SFIA level 3
 	* Security and Information Risk Advisor (SIRA) partitioner is SFIA level 2
@@ -47,7 +56,9 @@ ROLES:
 	* IA Auditor (cyber security) partitioner is SFIA level 2.
 	* IT Security Officer (family of roles: Information System Security Officer (ISSO)L2, Information System Security Manager (ISSM), IT Security Officer(ITSO)  )
 	* Communications Security Officer (family of roles: Comsec Practitioner (L2), Comsec Manager, ComSO)
-
+	
+Might what review this:
+https://www.ncsc.gov.uk/files/CCP-Guidance_to_certification_for_IA_professionals_2-3.pdf
 
 
 ### Information  
@@ -72,9 +83,19 @@ Authority includes setting policy. Makes decisions critical to organisation, inf
 
 #### IISP  
 https://en.wikipedia.org/wiki/Institute_of_Information_Security_Professionals  
-https://www.iisp.org/  
+https://www.iisp.org/  <-  this is now CIISEC and it appears no more info on IISP?  
+head here http://web.archive.org/web/2019*/iisp.org  
+
+IISP Skills Framework V2.2
+http://web.archive.org/web/20190307025049/https://www.iisp.org/iisp/About_Us/Our_Frameworks/Our_Skills_Framework/iispv2/Accreditation/Our_Skills_Framework.aspx?hkey=e77a6f03-9498-423e-aa7b-585381290ec4
 
 #### ciisec  
 Chartered Institute of Information Security (CIISec)  
 https://www.ciisec.org/           <<<+++  try ging these guys a call  
 https://www.youtube.com/channel/UCOuyrlUtIWLrFoxKUtV59Mw  
+
+#### CyBok
+The Cyber Security Body Of Knowledge  
+By the Uni of Bristol?  
+Why does https://www.cybok.org/knowledgebase/   show Version 1.0   (and shows as 2019?)
+But there is a 2017   https://www.cybok.org/media/downloads/CyBOKScopeV2.pdf

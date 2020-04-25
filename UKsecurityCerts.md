@@ -4,7 +4,10 @@
 Finding a foundation certification for the UK  
 
 ### Questions:  
-What is the UK version of DoD?  
+What is the UK version of DoD 8570?  
+- try this https://www.businessnewsdaily.com/10708-information-security-certifications.html
+- https://www.comptia.org/blog/difference-dod-8570-dod-8140-dod-8570.01-m
+- 8140 replaces 8570  (2015)
 What is the most asked for in Job search  
 What is required for MoD, MI5/6, GCHQ/NCSC  
 Is this any good? Certified ISO 27005 ISMS Risk Management  

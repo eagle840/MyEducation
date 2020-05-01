@@ -10,6 +10,7 @@ CREATE (CIISECskills:FrameWork {name: 'CIISEC Skills Framework', url: 'https://w
 CREATE (CCP:Certification {name: 'CESG Certified Professional', url: 'ncsc.gov.uk/information/about-certified-professional-scheme'}
 CREATE (ICSF:Certification {name: 'Information & Cyber Security Foundation', url: 'https://www.ciisec.org/CIISEC/Development/ICSF_Exam.aspx?WebsiteKey=a17cb243-464e-4ad3-96f8-2635490f727a&hkey=44f90ef7-3f09-4253-8149-f676b52571e6&Membership_Accreditation=4#Membership_Accreditation', provider: 'CISSEUK'})
 CREATE (NIS:Regulatory {name: 'Network and Information Systems Regulations 2018', url: 'https://ico.org.uk/for-organisations/the-guide-to-nis/what-is-nis/', region: 'EU'})
+CREATE (CIS:Org {name: 'Center for Internet Security', url: 'https://www.cisecurity.org/', roles: ['best practices', 'tools', 'threats'})
 
 
 (GCHQ)-[:PARENT]->(NCSC)

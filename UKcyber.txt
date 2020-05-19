@@ -1,16 +1,40 @@
 ## work into wikidata
 
+#
+#
+#  need to add roles:[]  to the attrib set, eg: roles: ['best practices', 'tools]
+#
+# Node TYPES
+#  Org
+#  FrameWork
+#  Program
+#  Certification
+#  Regulatory
+#  Standard
+#
+#
+# Node Properties:   !find a schema
+#  name: common name
+#  url
+#  Q:   wikidata Q number
+#  Shortdescription
+#
+# Relationship TYPEs
+#  PARENT
+#  
+
+
 CREATE (NCSC:Org {name: 'National Cyber Security Centre', url: 'https://www.ncsc.gov.uk/'})
-CREATE (GCGH:org {name: 'GCHQ', url: 'https://www.gchq.gov.uk/'})
+CREATE (GCHQ:Org {name: 'GCHQ', url: 'https://www.gchq.gov.uk/'})
 CREATE (CISSEUK:Org {name: 'Colloquium on Information Systems Security Education UK', url: 'https://cisseuk.org/', role: 'education'})
-CREATE (DCMS:Org (name: '', url: '', role:[])
+CREATE (DCMS:Org {name: 'Department for Digital, Culture, Media and Sport', url: 'https://www.gov.uk/dcms'})
 CREATE (CAF3:FrameWork {name: 'Cyber Assessment Framework 3.0', url:'https://www.ncsc.gov.uk/blog-post/the-cyber-assessment-framework-3-0'})
-CREATE (ACE-CSE:Program {name: 'Academic Centres of Excellence in Cyber Security Education', url: 'https://www.ncsc.gov.uk/blog-post/launch-of-the-academic-centres-of-excellence-in-cyber-security-education'}
+CREATE (ACE_CSE:Program {name: 'Academic Centres of Excellence in Cyber Security Education', url: 'https://www.ncsc.gov.uk/blog-post/launch-of-the-academic-centres-of-excellence-in-cyber-security-education'})
 CREATE (CIISECskills:FrameWork {name: 'CIISEC Skills Framework', url: 'https://www.ncsc.gov.uk/information/certified-training', role: 'skills'})
-CREATE (CCP:Certification {name: 'CESG Certified Professional', url: 'ncsc.gov.uk/information/about-certified-professional-scheme'}
+CREATE (CCP:Certification {name: 'CESG Certified Professional', url: 'ncsc.gov.uk/information/about-certified-professional-scheme'})
 CREATE (ICSF:Certification {name: 'Information & Cyber Security Foundation', url: 'https://www.ciisec.org/CIISEC/Development/ICSF_Exam.aspx?WebsiteKey=a17cb243-464e-4ad3-96f8-2635490f727a&hkey=44f90ef7-3f09-4253-8149-f676b52571e6&Membership_Accreditation=4#Membership_Accreditation', provider: 'CISSEUK'})
 CREATE (NIS:Regulatory {name: 'Network and Information Systems Regulations 2018', url: 'https://ico.org.uk/for-organisations/the-guide-to-nis/what-is-nis/', region: 'EU'})
-CREATE (CIS:Org {name: 'Center for Internet Security', url: 'https://www.cisecurity.org/', roles: ['best practices', 'tools', 'threats'})
+CREATE (CIS:Org {name: 'Center for Internet Security', url: 'https://www.cisecurity.org/'})
 
 
-(GCHQ)-[:PARENT]->(NCSC)
+CREATE (GCHQ)-[:PARENT]->(NCSC)

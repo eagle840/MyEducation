@@ -13,7 +13,7 @@ GDPR
 NIS
 DSP https://www.dsptoolkit.nhs.uk/Help
 https://www.gov.uk/government/publications/data-security-and-protection-for-health-and-care-organisations
-
+https://www.gov.uk/government/organisations/national-data-guardian
 
 # Laws in US
 HIPAA

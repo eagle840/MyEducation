@@ -33,6 +33,7 @@
 //    following line clears out old database
 //  MATCH (n) DETACH DELETE n
 //
+// to show a graph:   match (m) return m
 
 CREATE (NCSC:Org {name: 'National Cyber Security Centre', url: 'https://www.ncsc.gov.uk/'})
 CREATE (GCHQ:Org {name: 'GCHQ', url: 'https://www.gchq.gov.uk/'})
@@ -42,7 +43,7 @@ CREATE (CAF3:FrameWork {name: 'Cyber Assessment Framework 3.0', url:'https://www
 CREATE (ACE_CSE:Program {name: 'Academic Centres of Excellence in Cyber Security Education', url: 'https://www.ncsc.gov.uk/blog-post/launch-of-the-academic-centres-of-excellence-in-cyber-security-education'})
 CREATE (CIISECskills:FrameWork {name: 'CIISEC Skills Framework', url: 'https://www.ncsc.gov.uk/information/certified-training', role: 'skills'})
 CREATE (CCP:Certification {name: 'CESG Certified Professional', url: 'ncsc.gov.uk/information/about-certified-professional-scheme'})
-CREATE (ICSF:Certification {name: 'Information & Cyber Security Foundation', url: 'https://www.ciisec.org/CIISEC/Development/ICSF_Exam.aspx?WebsiteKey=a17cb243-464e-4ad3-96f8-2635490f727a&hkey=44f90ef7-3f09-4253-8149-f676b52571e6&Membership_Accreditation=4#Membership_Accreditation', provider: 'CISSEUK'})
+CREATE (ICSF:Certification {name: 'Information & Cyber Security Foundation', url: 'https://www.ciisec.org/CIISEC/Development/ICSF_Exam.aspx', provider: 'CISSEUK'})
 CREATE (NIS:Regulatory {name: 'Network and Information Systems Regulations 2018', url: 'https://ico.org.uk/for-organisations/the-guide-to-nis/what-is-nis/', region: 'EU'})
 CREATE (CIS:Org {name: 'Center for Internet Security', url: 'https://www.cisecurity.org/'})// ABOVE GOOD
 CREATE (ISACA:Org {name: 'ISACA', url: 'https://www.isaca.org/', Q: 'Q1662502' })
@@ -69,6 +70,7 @@ CREATE (Cyber_Essentials_PLUS)-[:CERTIFED_BY]->(IASME)
 CREATE (IASME_GOVERNANCE)-[:PRODUCED_BY]->(IASME)
 CREATE (DHSC)-[:PARENT]->(NDG)
 CREATE (HMG)-[:PARENT]->(DHSC)
+CREATE (HMG)-[:PARENT]->(DCMS)
 CREATE (CISM)-[:PRODUCED_BY]->(ISACA)
 CREATE (CSXP)-[:PRODUCED_BY]->(ISACA)
 CREATE (COBIT)-[:PRODUCED_BY]->(ISACA)

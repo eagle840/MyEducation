@@ -28,6 +28,10 @@
 //  
 // don't copy above until # replaced with //
 
+//    following line clears out old database
+//  MATCH (n) DETACH DELETE n
+//
+
 CREATE (NCSC:Org {name: 'National Cyber Security Centre', url: 'https://www.ncsc.gov.uk/'})
 CREATE (GCHQ:Org {name: 'GCHQ', url: 'https://www.gchq.gov.uk/'})
 CREATE (CISSEUK:Org {name: 'Colloquium on Information Systems Security Education UK', url: 'https://cisseuk.org/', role: 'education'})

@@ -70,8 +70,8 @@ CREATE (Cyber_Essentials:FrameWork {name: 'Cyber Essentials', url: 'https://www.
 CREATE (Cyber_Essentials_PLUS:FrameWork {name: 'Cyber Essentials Plus', url: 'https://www.ncsc.gov.uk/cyberessentials/overview', Q: 'Q18349520'})
 CREATE (ENISA:Org {name: 'UN Agency For Cyber Security', url: 'https://www.enisa.europa.eu/', Q: 'Q1377194'})
 CREATE (ISF:Org {name: 'Information Security Forum', url: 'http://www.securityforum.org/', Q: 'Q3150834'})
-CREATE (CYBER_LABOUR:Publication {name: 'Understanding the UK cyber security skills labour market', url: 'https://www.ipsos.com/sites/default/files/ct/publication/documents/2019-01/understanding_the_uk_cyber_security_skills_labour_market.pdf'})
-
+CREATE (CYBER_LABOUR19:Publication {name: 'Understanding the UK cyber security skills labour market 2019', url: 'https://www.ipsos.com/sites/default/files/ct/publication/documents/2019-01/understanding_the_uk_cyber_security_skills_labour_market.pdf'})
+CREATE (CYBER_LABOR20:Publication {name: 'Cyber security skills in the UK labour market 2020', url: '')
 // Update these:
 CREATE (ISO27000:FrameWork {name: 'ISO27000', url: '', Q: ''})
 CREATE (ISO27001:FrameWork  {name: 'ISO27001', url: '', Q: ''})
@@ -84,7 +84,11 @@ CREATE (HMG_SPF:FrameWork  {name: 'HMG Security policy framework', url: 'https:/
 CREATE (ISC2:Org {name: 'ISC2', url: 'https://www.isc2.org/', Q: 'Q3153272'})
 CREATE (SCMAG:Publication {name: 'scmagazineuk', url: 'https://www.scmagazineuk.com/', Q:''})
 CREATE (NCSS:FrameWork {name: 'NATIONAL CYBER SECURITYSTRATEGY 2016-2021', url: 'https://www.gov.uk/government/publications/national-cyber-security-strategy-2016-to-2021', Q: ''})
+CREATE (GC_BLOG:Publication {name: 'Graham Cluley blog', url: 'https://www.grahamcluley.com/'})
 
+
+CREATE (CREATE (CYBER_LABOUR20)-[:PRODUCED_BY]->(HMG)
+CREATE (CREATE (CYBER_LABOUR19)-[:PRODUCED_BY]->(HMG)
 CREATE (NCSS)-[:PRODUCED_BY]->(HMG)
 CREATE (HMG_SPF)-[:APPLIES_TO]->(HMG)
 CREATE (ACE_CSE)-[:PRODUCED_BY]->(DCMS)

@@ -40,6 +40,9 @@
 
 
 // import items form here: https://en.wikipedia.org/wiki/UK_cyber_security_community
+// https://en.wikipedia.org/wiki/Data_Protection_Act_2018
+// GDPR
+// check out https://www.qa.com/course-catalogue/courses/foundation-certificate-in-cyber-security-qafccs/
 
 CREATE (NCSC:Org {name: 'National Cyber Security Centre', url: 'https://www.ncsc.gov.uk/'})
 CREATE (GCHQ:Org {name: 'GCHQ', url: 'https://www.gchq.gov.uk/'})

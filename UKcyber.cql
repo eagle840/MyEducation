@@ -70,6 +70,7 @@ CREATE (Cyber_Essentials:FrameWork {name: 'Cyber Essentials', url: 'https://www.
 CREATE (Cyber_Essentials_PLUS:FrameWork {name: 'Cyber Essentials Plus', url: 'https://www.ncsc.gov.uk/cyberessentials/overview', Q: 'Q18349520'})
 CREATE (ENISA:Org {name: 'UN Agency For Cyber Security', url: 'https://www.enisa.europa.eu/', Q: 'Q1377194'})
 CREATE (ISF:Org {name: 'Information Security Forum', url: 'http://www.securityforum.org/', Q: 'Q3150834'})
+CREATE (CYBER_LABOUR:Publication {name: 'Understanding the UK cyber security skills labour market', url: 'https://www.ipsos.com/sites/default/files/ct/publication/documents/2019-01/understanding_the_uk_cyber_security_skills_labour_market.pdf'})
 
 // Update these:
 CREATE (ISO27000:FrameWork {name: 'ISO27000', url: '', Q: ''})

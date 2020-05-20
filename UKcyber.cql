@@ -23,6 +23,7 @@
 //  Q:   wikidata Q number
 //  Shortdescription
 //  ? fwType  (framework type, see above)
+//  ? coo (country of orgin) ?
 //
 // Relationship TYPEs
 //  PARENT
@@ -59,6 +60,17 @@ CREATE (IASME_GOVERNANCE:FrameWork {name: 'IASME GOVERNANCE', url: 'https://iasm
 CREATE (NCSC10:FrameWork {name: 'NCSC 10 Steps to Cyber Security', url: 'https://www.ncsc.gov.uk/collection/10-steps-to-cyber-security', Q: ''})
 CREATE (Cyber_Essentials:FrameWork {name: 'Cyber Essentials', url: 'https://www.ncsc.gov.uk/cyberessentials/overview', Q: 'Q18349520'})
 CREATE (Cyber_Essentials_PLUS:FrameWork {name: 'Cyber Essentials Plus', url: 'https://www.ncsc.gov.uk/cyberessentials/overview', Q: 'Q18349520'})
+CREATE (ENISA:Org {name: 'UN Agency For Cyber Security', url: 'https://www.enisa.europa.eu/', Q: 'Q1377194'})
+CREATE (ISF:Org {name: 'Information Security Forum', url: 'http://www.securityforum.org/', Q: 'Q3150834'})
+
+// Update these:
+CREATE (ISO27000:FrameWork {name: 'ISO27000', url: '', Q: ''})
+CREATE (ISO27001:FrameWork  {name: 'ISO27001', url: '', Q: ''})
+CREATE (ISO27002:FrameWork  {name: 'ISO27002', url: '', Q: ''})
+CREATE (PCIDSS:FrameWork  {name: 'PCIDSS', url: '', Q: ''})
+CREATE (SOX  {name: 'SOX', url: '', Q: ''})
+CREATE (HIPAA  {name: 'HIPAA', url: '', Q: ''})
+CREATE (  {name: '', url: '', Q: ''})
 
 CREATE (ACE_CSE)-[:PRODUCED_BY]->(DCMS)
 CREATE (ACE_CSE)-[:PRODUCED_BY]->(NCSC)

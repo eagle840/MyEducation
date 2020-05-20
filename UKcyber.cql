@@ -12,8 +12,9 @@
 //  FrameWork (5 types: reg, non-reg, national std, inter std, indusrty specific => ??? make a prpperty)
 //  Program
 //  Certification  ? should this be broken into personal/org?
-//  Regulatory 
-//  Standard
+//  Regulatory (into framework)
+//  Standard  (into framework)
+//  Publication
 //
 //
 // Node Properties:   !find a schema
@@ -28,6 +29,7 @@
 // Relationship TYPEs
 //  PARENT
 //  PRODUCED_BY
+//  APPLIES_TO
 //  
 // don't copy above until # replaced with //
 
@@ -68,10 +70,14 @@ CREATE (ISO27000:FrameWork {name: 'ISO27000', url: '', Q: ''})
 CREATE (ISO27001:FrameWork  {name: 'ISO27001', url: '', Q: ''})
 CREATE (ISO27002:FrameWork  {name: 'ISO27002', url: '', Q: ''})
 CREATE (PCIDSS:FrameWork  {name: 'PCIDSS', url: '', Q: ''})
-CREATE (SOX  {name: 'SOX', url: '', Q: ''})
-CREATE (HIPAA  {name: 'HIPAA', url: '', Q: ''})
-CREATE (  {name: '', url: '', Q: ''})
+CREATE (SOX:FrameWork  {name: 'SOX', url: '', Q: ''})
+CREATE (HIPAA:FrameWork  {name: 'HIPAA', url: '', Q: ''})
+CREATE (HMG_SPF:FrameWork  {name: 'HMG Security policy framework', url: 'https://www.gov.uk/government/publications/security-policy-framework', Q: 'Q7444984'})
+// CREATE (  {name: '', url: '', Q: ''})
+CREATE (ISC2:Org {name: 'ISC2', url: 'https://www.isc2.org/', Q: 'Q3153272'})
+CREATE (SCMAG:Publication {name: scmagazineuk'', url: 'https://www.scmagazineuk.com/', Q:''})
 
+CREATE (HMG_SPF)-[:APPLIES_TO]->(HMG)
 CREATE (ACE_CSE)-[:PRODUCED_BY]->(DCMS)
 CREATE (ACE_CSE)-[:PRODUCED_BY]->(NCSC)
 CREATE (CCP)-[:PRODUCED_BY]->(NCSC)

@@ -7,11 +7,12 @@
 //  need to add roles:[]  to the attrib set, eg: roles: ['best practices', 'tools]
 
 // Node TYPES
+// (note that types get different colors in the graph, 12 shown)
 //  Org
-//  FrameWork
+//  FrameWork (5 types: reg, non-reg, national std, inter std, indusrty specific => ??? make a prpperty)
 //  Program
-//  Certification
-//  Regulatory
+//  Certification  ? should this be broken into personal/org?
+//  Regulatory 
 //  Standard
 //
 //
@@ -21,6 +22,7 @@
 //  url
 //  Q:   wikidata Q number
 //  Shortdescription
+//  ? fwType  (framework type, see above)
 //
 // Relationship TYPEs
 //  PARENT
@@ -51,12 +53,14 @@ CREATE (CISM:Certification {name: 'Certified Information Security Manager', url:
 CREATE (HMG:Org {name: 'UK Government', url: 'https://www.gov.uk/', Q: 'Q6063'})
 CREATE (DHSC:Org {name: 'Department of Health and Social Care', url: 'https://www.gov.uk/government/organisations/department-of-health-and-social-care', Q: 'Q3044742'})
 CREATE (NDG:Org {name: 'National Data Guardian', url: 'https://www.gov.uk/government/organisations/national-data-guardian', Q: 'Q60741063' })
-CREATE (IASME:Org {name: '', url: 'https://iasme.co.uk/', Q: 'Q16985457'})
+CREATE (IASME:Org {name: 'IASME', url: 'https://iasme.co.uk/', Q: 'Q16985457'})
 CREATE (IASME_GOVERNANCE:FrameWork {name: 'IASME GOVERNANCE', url: 'https://iasme.co.uk/iasme-governance/',  Q: ''})
 CREATE (NCSC10:FrameWork {name: 'NCSC 10 Steps to Cyber Security', url: 'https://www.ncsc.gov.uk/collection/10-steps-to-cyber-security', Q: ''})
 CREATE (Cyber_Essentials:FrameWork {name: 'Cyber Essentials', url: 'https://www.ncsc.gov.uk/cyberessentials/overview', Q: 'Q18349520'})
 CREATE (Cyber_Essentials_PLUS:FrameWork {name: 'Cyber Essentials Plus', url: 'https://www.ncsc.gov.uk/cyberessentials/overview', Q: 'Q18349520'})
 
+CREATE (ACE_CSE)-[:PRODUCED_BY]->(DCMS)
+CREATE (ACE_CSE)-[:PRODUCED_BY]->(NCSC)
 CREATE (CCP)-[:PRODUCED_BY]->(NCSC)
 CREATE (Cyber_Essentials_PLUS)-[:PRODUCED_BY]->(NCSC)
 CREATE (Cyber_Essentials)-[:PRODUCED_BY]->(NCSC)
@@ -64,7 +68,7 @@ CREATE (NCSC10)-[:PRODUCED_BY]->(NCSC)
 CREATE (Cyber_Essentials_PLUS)-[:CERTIFED_BY]->(IASME)
 CREATE (IASME_GOVERNANCE)-[:PRODUCED_BY]->(IASME)
 CREATE (DHSC)-[:PARENT]->(NDG)
-CREATE (HMG>-[:PARENT]->(DHSC)
+CREATE (HMG)-[:PARENT]->(DHSC)
 CREATE (CISM)-[:PRODUCED_BY]->(ISACA)
 CREATE (CSXP)-[:PRODUCED_BY]->(ISACA)
 CREATE (COBIT)-[:PRODUCED_BY]->(ISACA)

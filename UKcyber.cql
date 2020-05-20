@@ -82,7 +82,9 @@ CREATE (HMG_SPF:FrameWork  {name: 'HMG Security policy framework', url: 'https:/
 // CREATE (  {name: '', url: '', Q: ''})
 CREATE (ISC2:Org {name: 'ISC2', url: 'https://www.isc2.org/', Q: 'Q3153272'})
 CREATE (SCMAG:Publication {name: scmagazineuk'', url: 'https://www.scmagazineuk.com/', Q:''})
+CREATE (NCSS:FrameWork {name: 'NATIONAL CYBER SECURITYSTRATEGY 2016-2021', url: 'https://www.gov.uk/government/publications/national-cyber-security-strategy-2016-to-2021', Q: ''})
 
+CREATE (NCSS)-[:PRODUCED_BY]->(HMG)
 CREATE (HMG_SPF)-[:APPLIES_TO]->(HMG)
 CREATE (ACE_CSE)-[:PRODUCED_BY]->(DCMS)
 CREATE (ACE_CSE)-[:PRODUCED_BY]->(NCSC)

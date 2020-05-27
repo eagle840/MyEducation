@@ -15,7 +15,7 @@
 //  Regulatory (into framework)
 //  Standard  (into framework)
 //  Publication
-//
+//  Education
 //
 // Node Properties:   !find a schema
 //  name: common name  
@@ -93,7 +93,10 @@ CREATE (CHECK:FrameWork {name: 'CHECK', url: 'https://www.ncsc.gov.uk/informatio
 CREATE (CSA:Org {name: 'Cloud Security Alliance', url: 'https://cloudsecurityalliance.org/', Q: ''})
 CREATE (CCM:FrameWork {name: 'Cloud Controls Matrix', url: 'https://cloudsecurityalliance.org/artifacts/cloud-controls-matrix-v3-0-1/'})
 CREATE (ENISA:Org {name:'European Union Agency for Network and Information Security'})
+CREATE (NIST:Org {name: 'NIST', url: 'nist.gov'})
+CREATE (NICE:Publication {name: 'NATIONAL INITIATIVE FOR CYBERSECURITY EDUCATION', description: 'Free and Low Cost Online Cybersecurity Learning Content'})
 
+CREATE (NICE)-[:PRODUCED_BY]->(NIST)
 CREATE (CCM)-[:PRODUCED_BY]->(CSA)
 CREATE (CBEST)-[:APPLIES_TO]->(BOE)
 CREATE (CBEST)-[:PRODUCED_BY]->(CREST)

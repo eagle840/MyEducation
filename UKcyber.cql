@@ -95,6 +95,8 @@ CREATE (CCM:FrameWork {name: 'Cloud Controls Matrix', url: 'https://cloudsecurit
 CREATE (ENISA:Org {name:'European Union Agency for Network and Information Security'})
 CREATE (NIST:Org {name: 'NIST', url: 'nist.gov'})
 CREATE (NICE:Publication {name: 'NATIONAL INITIATIVE FOR CYBERSECURITY EDUCATION', description: 'Free and Low Cost Online Cybersecurity Learning Content'})
+CREATE (PS:FrameWork {name: 'Privacy Shield', description: 'Replaces US-EU Safe Hardor Standard'})
+
 
 CREATE (NICE)-[:PRODUCED_BY]->(NIST)
 CREATE (CCM)-[:PRODUCED_BY]->(CSA)

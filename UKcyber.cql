@@ -96,8 +96,15 @@ CREATE (ENISA:Org {name:'European Union Agency for Network and Information Secur
 CREATE (NIST:Org {name: 'NIST', url: 'nist.gov'})
 CREATE (NICE:Publication {name: 'NATIONAL INITIATIVE FOR CYBERSECURITY EDUCATION', description: 'Free and Low Cost Online Cybersecurity Learning Content'})
 CREATE (PS:FrameWork {name: 'Privacy Shield', description: 'Replaces US-EU Safe Hardor Standard'})
+CREATE (ACE_CSR:FrameWork {name: 'ACE-CSR', description: 'Academic Centres of Excellence in Cyber Security Research', url: 'https://www.ncsc.gov.uk/information/academic-centres-excellence-cyber-security-research'})
+CREATE (UoB:Org {name:'The University of Bristol with the University of Bath'})
+CREATE (RH:Org {name: 'Royal Holloway, University of London'})
+CREATE (UoL:Org {name: 'University College London'})
 
-
+CREATE (UoB)-[:PARENT]->(ACE_CSR)
+CREATE (UoL)-[:PARENT]->(ACE_CSR)
+CREATE (RH)-[:PARENT]->(ACE_CSR)
+CREATE (ACE_CSR)-[:PRODUCED_BY]->(NCSC)
 CREATE (NICE)-[:PRODUCED_BY]->(NIST)
 CREATE (CCM)-[:PRODUCED_BY]->(CSA)
 CREATE (CBEST)-[:APPLIES_TO]->(BOE)

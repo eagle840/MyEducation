@@ -101,6 +101,7 @@ CREATE (UoB:Org {name:'The University of Bristol with the University of Bath'})
 CREATE (RH:Org {name: 'Royal Holloway, University of London'})
 CREATE (UoL:Org {name: 'University College London'})
 CREATE (ITSecExp:Piblication {name: 'IT Security Expert Blog', url: 'https://blog.itsecurityexpert.co.uk/'})
+CREATE (ATTACK:Publication {name: 'attack.mitre.org', url: 'https://attack.mitre.org', description: ' globally-accessible knowledge base of adversary tactics and techniques' })
 
 CREATE (UoB)-[:PARENT]->(ACE_CSR)
 CREATE (UoL)-[:PARENT]->(ACE_CSR)

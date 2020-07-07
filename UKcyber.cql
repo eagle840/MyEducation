@@ -105,6 +105,7 @@ CREATE (ATTACK:Publication {name: 'attack.mitre.org', url: 'https://attack.mitre
 CREATE (SECURITYONION:Tools {name: 'Security Onion', url: 'https://securityonion.net', description: 'Linux distribution for threat hunting, enterprise security monitoring, and log management'})
 CREATE (KALI:Tools {name: 'KALI', uri: 'https://www.kali.org', description: 'Linux distribution for Advanced Penetration Testing'})
 CREATE (PARROT:Tools {name: 'Parrot OS', uri: 'https://parrotlinux.org', description: 'Linux distribution for Advanced Penetration Testing'})
+CREATE (CYBERUP:Program {name: 'CyberUP', uri: 'https://www.cyberupcampaign.com/', description: 'campaign calling for reform of the UK’s cybercrime laws' }
 
 CREATE (UoB)-[:PARENT]->(ACE_CSR)
 CREATE (UoL)-[:PARENT]->(ACE_CSR)

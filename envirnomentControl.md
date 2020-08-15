@@ -19,7 +19,7 @@
 
 ## Taking Notes
 1. Match the course with your opjective (eg a task, certification, job, etc)
-2. Generate a Onenote Page (or other note taking service)
+2. Generate a Onenote Page (or other note taking service)  <<< WHY ONENOTE and not github?
   2.1 'My Notes'
   2.2 'My Cheat Sheet'
   2.3 someone else cheat sheet

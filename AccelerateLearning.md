@@ -28,6 +28,7 @@
 ### Negitives
 Dunning–Kruger effect
 Recency Bias
+If you get stuck, don't panic and don't feel like you want to give up. Take break, sleep on it, try coming at the problem/subject at a difference angle. You may find that a different instructor will give a better explaintion for your learning style. 
 
 ## Note Taking
 OneNote, a blog, documentation system (eg git)

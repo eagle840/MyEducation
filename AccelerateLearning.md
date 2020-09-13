@@ -30,6 +30,14 @@ Dunning–Kruger effect
 Recency Bias
 
 ## Note Taking
+OneNote, a blog, documentation system (eg git)
+I'll use  paper to write out over all ideas/systems, and then write them into the computer and the end of 'class'
+Use different coloured pens to break up the page.
+Keep a record of the classes/video/reading you've done.
+Consider usin flash cards for the hard to rememeber items
+Consider writing your own and a exam sheet. I'll create a excel sheet with questions and anwsers and save two versions, one without the answers that I can print off.
+Consider writing a blog and producing a 'product' to show/explain to other how it works. 
+
 
 Note that I've tried othere college solutions - seems to take to much paper with no results
 
@@ -38,6 +46,7 @@ Run through again, using RED/GREEN to clearly mark out sections, order notes, en
 
 
 ## Class/course taking
-if there are many sections in a course, consider takeing all the sub courses over time as opposed to taking one at a time
+if there are many sections in a course, consider taking all the sub courses over time as opposed to taking one at a time
+If it's a short course that can be completed in a day, consider spreading it out over a few days, you'll retain the information better.
 This will get you education each day in a subsection, that will help reenforce the education over time
 Also have flash cards ready to fill in

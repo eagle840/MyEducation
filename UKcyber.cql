@@ -88,7 +88,7 @@ CREATE (GC_BLOG:Publication {name: 'Graham Cluley blog', url: 'https://www.graha
 CREATE (CBEST:FrameWork {name:'cbest', url: 'https://crest-approved.org/schemes/cbest/index.html'})
 CREATE (CREST:Org {name:'crest-approved', url: 'crest-approved.org', Q: ''})
 CREATE (BOE:Org {name:'Bank of England', url: 'https://www.bankofengland.co.uk/', Q: 'Q183231' })
-CREATE (CPS:Org (name: 'CPS', url: 'https://www.cps.gov.uk/legal-guidance/cybercrime-prosecution-guidance', Q: ''})
+CREATE (CPS:Org {name: 'CPS', url: 'https://www.cps.gov.uk/legal-guidance/cybercrime-prosecution-guidance', Q: ''})
 CREATE (CHECK:FrameWork {name: 'CHECK', url: 'https://www.ncsc.gov.uk/information/check-penetration-testing', url2: 'https://www.gov.uk/government/publications/it-health-check-ithc-supporting-guidance/it-health-check-ithc-supporting-guidance', Q: 'https://en.wikipedia.org/wiki/ITHC'})
 CREATE (CSA:Org {name: 'Cloud Security Alliance', url: 'https://cloudsecurityalliance.org/', Q: ''})
 CREATE (CCM:FrameWork {name: 'Cloud Controls Matrix', url: 'https://cloudsecurityalliance.org/artifacts/cloud-controls-matrix-v3-0-1/'})
@@ -105,8 +105,8 @@ CREATE (ATTACK:Publication {name: 'attack.mitre.org', url: 'https://attack.mitre
 CREATE (SECURITYONION:Tools {name: 'Security Onion', url: 'https://securityonion.net', description: 'Linux distribution for threat hunting, enterprise security monitoring, and log management'})
 CREATE (KALI:Tools {name: 'KALI', uri: 'https://www.kali.org', description: 'Linux distribution for Advanced Penetration Testing'})
 CREATE (PARROT:Tools {name: 'Parrot OS', uri: 'https://parrotlinux.org', description: 'Linux distribution for Advanced Penetration Testing'})
-CREATE (CYBERUP:Program {name: 'CyberUP', uri: 'https://www.cyberupcampaign.com/', description: 'campaign calling for reform of the UK’s cybercrime laws' }
-CREATE (CRUCIAL_ACAD:Education (name: 'Crucial Academy, uri: 'https://www.crucialacademy.co.uk/')
+CREATE (CYBERUP:Program {name: 'CyberUP', uri: 'https://www.cyberupcampaign.com/', description: 'campaign calling for reform of the UKs cybercrime laws' })
+CREATE (CRUCIAL_ACAD:Education {name: 'Crucial Academy', uri: 'https://www.crucialacademy.co.uk/'})
 
 CREATE (UoB)-[:PARENT]->(ACE_CSR)
 CREATE (UoL)-[:PARENT]->(ACE_CSR)

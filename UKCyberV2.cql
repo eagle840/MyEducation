@@ -44,8 +44,8 @@
 // GDPR
 // check out https://www.qa.com/course-catalogue/courses/foundation-certificate-in-cyber-security-qafccs/
 
-CREATE (NCSC:Org {name: 'National Cyber Security Centre', url: 'https://www.ncsc.gov.uk/'})
-CREATE (GCHQ:Org {name: 'GCHQ', url: 'https://www.gchq.gov.uk/'})
+CREATE (:Org {name: 'National Cyber Security Centre', sname: "NCSC", url: 'https://www.ncsc.gov.uk/'})
+CREATE (:Org {name: 'GCHQ',sname: "GCHQ", url: 'https://www.gchq.gov.uk/'})
 CREATE (CISSEUK:Org {name: 'Colloquium on Information Systems Security Education UK', url: 'https://cisseuk.org/', role: 'education'})
 CREATE (DCMS:Org {name: 'Department for Digital, Culture, Media and Sport', url: 'https://www.gov.uk/dcms'})
 CREATE (CAF3:FrameWork {name: 'Cyber Assessment Framework 3.0', url:'https://www.ncsc.gov.uk/blog-post/the-cyber-assessment-framework-3-0'})
@@ -107,6 +107,9 @@ CREATE (PARROT:Tools {name: 'Parrot OS', uri: 'https://parrotlinux.org', descrip
 CREATE (CYBERUP:Program {name: 'CyberUP', uri: 'https://www.cyberupcampaign.com/', description: 'campaign calling for reform of the UKs cybercrime laws' })
 CREATE (CRUCIAL_ACAD:Education {name: 'Crucial Academy', uri: 'https://www.crucialacademy.co.uk/'})
 
+
+// NOTE:    the Create command creates new nodes, even if duplicate !!
+
 CREATE (UoB)-[:PARENT]->(ACE_CSR)
 CREATE (UoL)-[:PARENT]->(ACE_CSR)
 CREATE (RH)-[:PARENT]->(ACE_CSR)
@@ -134,5 +137,5 @@ CREATE (HMG)-[:PARENT]->(CPS)
 CREATE (CISM)-[:PRODUCED_BY]->(ISACA)
 CREATE (CSXP)-[:PRODUCED_BY]->(ISACA)
 CREATE (COBIT)-[:PRODUCED_BY]->(ISACA)
-CREATE (GCHQ)-[:PARENT]->(NCSC)
+CREATE (:Org{sname: "GCHQ"})-[:PARENT]->(:Org{sname: "NCSC"})
 // above good

@@ -109,18 +109,46 @@ CREATE (:Education {name: 'Crucial Academy', uri: 'https://www.crucialacademy.co
 
 // NOTE:    the Create command creates new nodes, even if duplicate !!
 
-CREATE (UoB)-[:PARENT]->(ACE_CSR)
-CREATE (UoL)-[:PARENT]->(ACE_CSR)
-CREATE (RH)-[:PARENT]->(ACE_CSR)
-CREATE (ACE_CSR)-[:PRODUCED_BY]->(NCSC)
-CREATE (NICE)-[:PRODUCED_BY]->(NIST)
-CREATE (CCM)-[:PRODUCED_BY]->(CSA)
-CREATE (CBEST)-[:APPLIES_TO]->(BOE)
-CREATE (CBEST)-[:PRODUCED_BY]->(CREST)
-CREATE (CYBER_LABOUR20)-[:PRODUCED_BY]->(HMG)
-CREATE (CYBER_LABOUR19)-[:PRODUCED_BY]->(HMG)
-CREATE (NCSS)-[:PRODUCED_BY]->(HMG)
+// CREATE (UoB)-[:PARENT]->(ACE_CSR)
+MATCH (a:Org), (b:FrameWork) WHERE a.name='The University of Bristol with the University of Bath' AND b.name='ACE-CSR' MERGE (a)-[r:PARENT]->(b);
+
+
+// CREATE (UoL)-[:PARENT]->(ACE_CSR)
+MATCH (a:Org), (b:FrameWork) WHERE a.name: 'University College London'} AND b.name='ACE-CSR' MERGE (a)-[r:PARENT]->(b);
+
+// CREATE (RH)-[:PARENT]->(ACE_CSR)
+MATCH (a:Org), (b:FrameWork) WHERE a.name: 'Royal Holloway, University of London'} AND b.name='ACE-CSR' MERGE (a)-[r:PARENT]->(b);
+
+// CREATE (ACE_CSR)-[:PRODUCED_BY]->(NCSC)
+MATCH (b:FrameWork), (a:Org) WHERE a.name: 'National Cyber Security Centre' AND b.name='ACE-CSR' MERGE (b)-[r:PRODUCED_BY]->(a);
+
+
+// CREATE (NICE)-[:PRODUCED_BY]->(NIST)
+MATCH (a:Publication), (b:ORG) WHERE a.name: 'NATIONAL INITIATIVE FOR CYBERSECURITY EDUCATION' AND b.name='NIST' MERGE (a)-[r:PRODUCED_BY]->(b);
+
+
+// CREATE (CCM)-[:PRODUCED_BY]->(CSA)
+MATCH (a:FrameWork), (b:Org) WHERE a.name='Cloud Controls Matrix' AND b.name='Cloud Security Alliance' MERGE (a)-[r:PRODUCED_BY]->(b);
+
+// CREATE (CBEST)-[:APPLIES_TO]->(BOE)
+MATCH (a:FrameWork), (b:Org) WHERE a.name='cbest' AND b.name='Bank of England' MERGE (a)-[r:APPLIES_TO]->(b);
+
+
+// CREATE (CBEST)-[:PRODUCED_BY]->(CREST)
+MATCH (a:FrameWork), (b:Org) WHERE a.name='cbest' AND b.name='crest-approved' MERGE (a)-[r:PRODUCTED_BY]->(b);
+
+// CREATE (CYBER_LABOUR20)-[:PRODUCED_BY]->(HMG)
+MATCH (a:Publication), (b:Org) WHERE a.name='Understanding the UK cyber security skills labour market 2019' AND b.name='UK Government' MERGE (a)-[r:PRODUCED_BY]->(b);
+
+// CREATE (CYBER_LABOUR19)-[:PRODUCED_BY]->(HMG)
+MATCH (a:Publication), (b:Org) WHERE a.name='Understanding the UK cyber security skills labour market 2019' AND b.name='UK Government' MERGE (a)-[r:PRODUCED_BY]->(b);
+
+// CREATE (NCSS)-[:PRODUCED_BY]->(HMG)
+MATCH (a:FrameWork), (b:Org) WHERE a.name='NATIONAL CYBER SECURITYSTRATEGY 2016-2021' AND b.name='UK Government' MERGE (a)-[r:PRODUCED_BY]->(b);
+
 CREATE (HMG_SPF)-[:APPLIES_TO]->(HMG)
+MATCH (a:FrameWork), (b:Org) WHERE a.name='HMG Security policy framework' AND b.name='UK Government' MERGE (a)-[r:APPLIES_TOT]->(b);
+
 CREATE (ACE_CSE)-[:PRODUCED_BY]->(DCMS)
 CREATE (ACE_CSE)-[:PRODUCED_BY]->(NCSC)
 CREATE (CCP)-[:PRODUCED_BY]->(NCSC)

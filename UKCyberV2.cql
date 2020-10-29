@@ -114,17 +114,17 @@ MATCH (a:Org), (b:FrameWork) WHERE a.name='The University of Bristol with the Un
 
 
 // CREATE (UoL)-[:PARENT]->(ACE_CSR)
-MATCH (a:Org), (b:FrameWork) WHERE a.name: 'University College London'} AND b.name='ACE-CSR' MERGE (a)-[r:PARENT]->(b);
+MATCH (a:Org), (b:FrameWork) WHERE a.name='University College London' AND b.name='ACE-CSR' MERGE (a)-[r:PARENT]->(b);
 
 // CREATE (RH)-[:PARENT]->(ACE_CSR)
-MATCH (a:Org), (b:FrameWork) WHERE a.name: 'Royal Holloway, University of London'} AND b.name='ACE-CSR' MERGE (a)-[r:PARENT]->(b);
+MATCH (a:Org), (b:FrameWork) WHERE a.name='Royal Holloway, University of London' AND b.name='ACE-CSR' MERGE (a)-[r:PARENT]->(b);
 
 // CREATE (ACE_CSR)-[:PRODUCED_BY]->(NCSC)
-MATCH (b:FrameWork), (a:Org) WHERE a.name: 'National Cyber Security Centre' AND b.name='ACE-CSR' MERGE (b)-[r:PRODUCED_BY]->(a);
+MATCH (b:FrameWork), (a:Org) WHERE a.name='National Cyber Security Centre' AND b.name='ACE-CSR' MERGE (b)-[r:PRODUCED_BY]->(a);
 
 
 // CREATE (NICE)-[:PRODUCED_BY]->(NIST)
-MATCH (a:Publication), (b:ORG) WHERE a.name: 'NATIONAL INITIATIVE FOR CYBERSECURITY EDUCATION' AND b.name='NIST' MERGE (a)-[r:PRODUCED_BY]->(b);
+MATCH (a:Publication), (b:ORG) WHERE a.name='NATIONAL INITIATIVE FOR CYBERSECURITY EDUCATION' AND b.name='NIST' MERGE (a)-[r:PRODUCED_BY]->(b);
 
 
 // CREATE (CCM)-[:PRODUCED_BY]->(CSA)
@@ -146,23 +146,60 @@ MATCH (a:Publication), (b:Org) WHERE a.name='Understanding the UK cyber security
 // CREATE (NCSS)-[:PRODUCED_BY]->(HMG)
 MATCH (a:FrameWork), (b:Org) WHERE a.name='NATIONAL CYBER SECURITYSTRATEGY 2016-2021' AND b.name='UK Government' MERGE (a)-[r:PRODUCED_BY]->(b);
 
-CREATE (HMG_SPF)-[:APPLIES_TO]->(HMG)
+// CREATE (HMG_SPF)-[:APPLIES_TO]->(HMG)
 MATCH (a:FrameWork), (b:Org) WHERE a.name='HMG Security policy framework' AND b.name='UK Government' MERGE (a)-[r:APPLIES_TOT]->(b);
 
-CREATE (ACE_CSE)-[:PRODUCED_BY]->(DCMS)
-CREATE (ACE_CSE)-[:PRODUCED_BY]->(NCSC)
-CREATE (CCP)-[:PRODUCED_BY]->(NCSC)
-CREATE (Cyber_Essentials_PLUS)-[:PRODUCED_BY]->(NCSC)
-CREATE (Cyber_Essentials)-[:PRODUCED_BY]->(NCSC)
-CREATE (NCSC10)-[:PRODUCED_BY]->(NCSC)
-CREATE (Cyber_Essentials_PLUS)-[:CERTIFED_BY]->(IASME)
-CREATE (IASME_GOVERNANCE)-[:PRODUCED_BY]->(IASME)
-CREATE (DHSC)-[:PARENT]->(NDG)
-CREATE (HMG)-[:PARENT]->(DHSC)
-CREATE (HMG)-[:PARENT]->(DCMS)
-CREATE (HMG)-[:PARENT]->(CPS)
-CREATE (CISM)-[:PRODUCED_BY]->(ISACA)
-CREATE (CSXP)-[:PRODUCED_BY]->(ISACA)
-CREATE (COBIT)-[:PRODUCED_BY]->(ISACA)
-CREATE (:Org{sname: "GCHQ"})-[:PARENT]->(:Org{sname: "NCSC"})
+// CREATE (ACE_CSE)-[:PRODUCED_BY]->(DCMS)
+MATCH (a:Progam), (b:Org) WHERE a.name='Academic Centres of Excellence in Cyber Security Education' AND b.name='Department for Digital, Culture, Media and Sport' MERGE (a)-[r:PRODUCED_BY]->(b);
+
+// CREATE (ACE_CSE)-[:PRODUCED_BY]->(NCSC)
+MATCH (a:Program), (b:Org) WHERE a.name='Academic Centres of Excellence in Cyber Security Education' AND b.name='National Cyber Security Centre' MERGE (a)-[r:PRODUCED_BY]->(b);
+
+// CREATE (CCP)-[:PRODUCED_BY]->(NCSC)
+MATCH (a:Certification), (b:Org) WHERE a.name='CESG Certified Professional' AND b.name='National Cyber Security Centre' MERGE (a)-[r:PRODUCED_BY]->(b);
+
+// CREATE (Cyber_Essentials_PLUS)-[:PRODUCED_BY]->(NCSC)
+MATCH (a:FrameWork), (b:Org) WHERE a.name='Cyber Essentials Plus' AND b.name='National Cyber Security Centre' MERGE (a)-[r:PRODUCED_BY]->(b);
+
+// CREATE (Cyber_Essentials)-[:PRODUCED_BY]->(NCSC)
+MATCH (a:FrameWork), (b:Org) WHERE a.name='Cyber Essentials' AND b.name='National Cyber Security Centre' MERGE (a)-[r:PRODUCED_BY]->(b);
+
+// CREATE (NCSC10)-[:PRODUCED_BY]->(NCSC)
+MATCH (a:FrameWork), (b:Org) WHERE a.name='NCSC 10 Steps to Cyber Security' AND b.name='National Cyber Security Centre' MERGE (a)-[r:PRODUCED_BY]->(b);
+
+//CREATE (Cyber_Essentials_PLUS)-[:CERTIFED_BY]->(IASME)
+MATCH (a:FrameWork), (b:Org) WHERE a.name='Cyber Essentials Plus' AND b.name='IASME' MERGE (a)-[r:CERTIFED_BY]->(b);
+
+// CREATE (IASME_GOVERNANCE)-[:PRODUCED_BY]->(IASME)
+MATCH (a:FrameWork), (b:Org) WHERE a.name='IASME GOVERNANCE' AND b.name='IASME' MERGE (a)-[r:PRODUCED_BY]->(b);
+
+// CREATE (DHSC)-[:PARENT]->(NDG)
+MATCH (a:Org), (b:Org) WHERE a.name='Department of Health and Social Care' AND b.name='National Data Guardian' MERGE (a)-[r:PARENT]->(b);
+
+// CREATE (HMG)-[:PARENT]->(DHSC)
+MATCH (a:Org), (b:Org) WHERE a.name='UK Government' AND b.name='Department of Health and Social Care' MERGE (a)-[r:PARENT]->(b);
+
+// CREATE (HMG)-[:PARENT]->(DCMS)
+MATCH (a:Org), (b:Org) WHERE a.name='UK Government' AND b.name='Department for Digital, Culture, Media and Sport' MERGE (a)-[r:PARENT]->(b);
+
+// CREATE (HMG)-[:PARENT]->(CPS)
+MATCH (a:Org), (b:Org) WHERE a.name='UK Government' AND b.name='CPS' MERGE (a)-[r:PARENT]->(b);
+
+
+// CREATE (CISM)-[:PRODUCED_BY]->(ISACA)
+MATCH (a:Certification), (b:Org) WHERE a.name='Certified Information Security Manager' AND b.name='ISACA' MERGE (a)-[r:PRODUCED_BY]->(b);
+
+
+// CREATE (CSXP)-[:PRODUCED_BY]->(ISACA)
+MATCH (a:Certification), (b:Org) WHERE a.name='Cyber Essentials' AND b.name='ISACA' MERGE (a)-[r:PRODUCED_BY]->(b);
+
+
+// CREATE (COBIT)-[:PRODUCED_BY]->(ISACA)
+MATCH (a:FrameWork), (b:Org) WHERE a.name='COBIT' AND b.name='ISACA' MERGE (a)-[r:PRODUCED_BY]->(b);
+
+
+// CREATE (:Org{sname: "GCHQ"})-[:PARENT]->(:Org{sname: "NCSC"})
+MATCH (a:Org), (b:Org) WHERE a.name='GCHQ' AND b.name='National Cyber Security Centre' MERGE (a)-[r:PARENT]->(b);
+
+
 // above good

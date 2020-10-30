@@ -118,7 +118,7 @@ MATCH (a:FrameWork), (b:Org) WHERE a.name='cbest' AND b.name='crest-approved' ME
 MATCH (a:Publication), (b:Org) WHERE a.name='Understanding the UK cyber security skills labour market 2019' AND b.name='UK Government' MERGE (a)-[r:PRODUCED_BY]->(b);
 MATCH (a:Publication), (b:Org) WHERE a.name='Understanding the UK cyber security skills labour market 2019' AND b.name='UK Government' MERGE (a)-[r:PRODUCED_BY]->(b);
 MATCH (a:FrameWork), (b:Org) WHERE a.name='NATIONAL CYBER SECURITYSTRATEGY 2016-2021' AND b.name='UK Government' MERGE (a)-[r:PRODUCED_BY]->(b);
-MATCH (a:FrameWork), (b:Org) WHERE a.name='HMG Security policy framework' AND b.name='UK Government' MERGE (a)-[r:APPLIES_TOT]->(b);
+MATCH (a:FrameWork), (b:Org) WHERE a.name='HMG Security policy framework' AND b.name='UK Government' MERGE (a)-[r:APPLIES_TO]->(b);
 MATCH (a:Progam), (b:Org) WHERE a.name='Academic Centres of Excellence in Cyber Security Education' AND b.name='Department for Digital, Culture, Media and Sport' MERGE (a)-[r:PRODUCED_BY]->(b);
 MATCH (a:Program), (b:Org) WHERE a.name='Academic Centres of Excellence in Cyber Security Education' AND b.name='National Cyber Security Centre' MERGE (a)-[r:PRODUCED_BY]->(b);
 MATCH (a:Certification), (b:Org) WHERE a.name='CESG Certified Professional' AND b.name='National Cyber Security Centre' MERGE (a)-[r:PRODUCED_BY]->(b);

@@ -96,7 +96,7 @@ CREATE (:Publication {name: 'NATIONAL INITIATIVE FOR CYBERSECURITY EDUCATION', s
 CREATE (:FrameWork {name: 'Privacy Shield', description: 'Replaces US-EU Safe Hardor Standard'})
 CREATE (:FrameWork {name: 'ACE-CSR', description: 'Academic Centres of Excellence in Cyber Security Research', url: 'https://www.ncsc.gov.uk/information/academic-centres-excellence-cyber-security-research'})
 CREATE (:Org {name:'The University of Bristol with the University of Bath', sname: 'UoB', url: 'https://www.bristol.ac.uk'})
-CREATE (:Org {name: 'Royal Holloway, University of London' }, sname: 'RH-UoL')
+CREATE (:Org {name: 'Royal Holloway, University of London', sname: 'RH-UoL'})
 CREATE (:Org {name: 'University College London', sname: 'UoL'})
 CREATE (:Publication {name: 'IT Security Expert Blog', url: 'https://blog.itsecurityexpert.co.uk/'})
 CREATE (:Publication {name: 'attack.mitre.org', sname: 'MITRE', url: 'https://attack.mitre.org', description: ' globally-accessible knowledge base of adversary tactics and techniques' })
